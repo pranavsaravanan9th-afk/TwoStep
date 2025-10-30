@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balance & Strength System | Clean Science for Women</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance & Strength | Two-Step Supplement System for Women</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: linear-gradient(180deg, #ffffff 0%, #f8e9f6 40%, #f4e3ff 100%);
       color: #222;
       line-height: 1.6;
+      background: linear-gradient(180deg, #ffffff 0%, #f8e9f6 40%, #f4e3ff 100%);
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      background-color: #ffffff;
+      background-color: #fff;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     header h2 {
-      font-weight: 700;
       font-size: 1.3rem;
-      color: #1b1b1b;
+      font-weight: 700;
       margin: 0;
+      color: #1b1b1b;
     }
-    header .cta-button {
-      margin-left: auto;
+    .cta-button {
+      background-color: #a34bc7;
+      color: #fff;
+      padding: 0.9rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.25s;
     }
+    .cta-button:hover { background-color: #8c3cae; }
+
     .hero {
       text-align: center;
-      padding: 6rem 1rem 2rem;
+      padding: 5rem 1rem 2rem;
     }
     h1 {
       font-size: 2.8rem;
@@ -46,83 +54,64 @@
       font-size: 1.2rem;
       color: #333;
     }
+
     .offer {
-      background: #fff0f7;
-      border: 1px solid #f2c2d9;
-      max-width: 480px;
+      background: #fff;
+      border: 1px solid #e9c4f1;
+      max-width: 500px;
       margin: 2rem auto;
       padding: 1rem 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
       text-align: center;
-    }
-    .offer .cta-button {
-      margin: 1.5rem auto 0;
-    }
-    .timer {
-      margin: 1rem 0;
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #a34bc7;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     .progress-bar {
       width: 80%;
-      margin: 0.5rem auto 1rem;
+      margin: 0.7rem auto 1rem;
       height: 8px;
-      background: #f8dcf9;
+      background: #f5dcf9;
       border-radius: 4px;
       overflow: hidden;
     }
     .progress-fill {
-      width: 40%;
+      width: 0;
       height: 100%;
       background: #a34bc7;
-      transition: width 1s ease;
+      transition: width 1.2s ease;
     }
+    .timer {
+      font-weight: 600;
+      color: #a34bc7;
+      margin-bottom: 0.5rem;
+    }
+
     .mission {
-      max-width: 720px;
-      margin: 2rem auto 3rem;
       text-align: center;
+      max-width: 720px;
+      margin: 3rem auto;
       font-size: 1.1rem;
       color: #333;
     }
-    .mission strong {
-      color: #a34bc7;
-    }
-    .cta-button {
-      display: block;
-      background-color: #a34bc7;
-      color: #fff;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: background 0.25s;
-      text-align: center;
-      width: fit-content;
-    }
-    .cta-button:hover {
-      background-color: #8c3cae;
-    }
+    .mission strong { color: #a34bc7; }
+
     .product-section {
       text-align: center;
-      margin-top: 4rem;
+      padding: 3rem 1rem;
     }
     .product-section h2 {
       color: #4b1b65;
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     .product-showcase {
       display: flex;
       justify-content: center;
       gap: 2rem;
       flex-wrap: wrap;
-      margin: 2rem auto;
-      max-width: 800px;
+      margin-top: 2rem;
     }
     .product {
-      background: #ffffff;
+      background: #fff;
       border: 2px solid #e1b4f9;
       border-radius: 12px;
       padding: 1.5rem;
@@ -131,40 +120,66 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
     .product img {
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 200px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 1rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.4rem 0;
     }
     .checkmark {
       width: 18px;
       height: 18px;
       background: #a34bc7;
       border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       color: #fff;
       font-size: 12px;
-      font-weight: bold;
-      margin-right: 8px;
-    }
-    .product ul {
-      list-style: none;
-      padding: 0;
-    }
-    .product li {
-      margin-bottom: 0.5rem;
       display: flex;
       align-items: center;
+      justify-content: center;
+      font-weight: bold;
     }
+
+    .science {
+      background: #fff;
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+      border-top: 1px solid #f2d8f7;
+      border-bottom: 1px solid #f2d8f7;
+    }
+    .science h2 {
+      color: #4b1b65;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    .science-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      color: #333;
+      font-size: 1.05rem;
+    }
+    .science-content h3 {
+      color: #a34bc7;
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+    }
+
     .testimonials {
       background: #f8e9f6;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       text-align: center;
+    }
+    .testimonials h2 {
+      color: #4b1b65;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
     }
     .testimonial-container {
       display: flex;
@@ -173,129 +188,177 @@
       flex-wrap: wrap;
     }
     .testimonial {
-      background: #ffffff;
+      background: #fff;
       border: 1px solid #e1b4f9;
-      border-radius: 10px;
-      padding: 1rem;
-      max-width: 400px;
+      border-radius: 14px;
+      padding: 1.5rem;
+      max-width: 420px;
       font-style: italic;
       color: #333;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
     }
-    .name {
-      font-weight: 600;
-      color: #a34bc7;
+    .testimonial .name {
       margin-top: 0.5rem;
+      font-weight: 700;
+      color: #a34bc7;
+      font-style: normal;
     }
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-    footer {
-      background: #ffffff;
+
+    .waitlist {
+      background: #fff;
       text-align: center;
       padding: 3rem 1rem;
+    }
+    .waitlist input {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 260px;
+      font-size: 1rem;
+    }
+    .waitlist button {
+      background-color: #a34bc7;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      transition: background 0.25s;
+    }
+    .waitlist button:hover { background-color: #8c3cae; }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
       font-size: 0.9rem;
       color: #777;
     }
+
+    .reveal { opacity: 0; transform: translateY(10px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.show { opacity: 1; transform: none; }
   </style>
 </head>
 <body>
   <header>
     <h2>Balance & Strength</h2>
-    <a href="#preorder" class="cta-button">Pre-Order</a>
+    <a href="https://tally.so/r/yourformlink" class="cta-button" target="_blank">Pre-Order Now</a>
   </header>
 
   <section class="hero">
-    <h1>Reclaim Your Strength. Redefine Menopause.</h1>
-    <p>A two-step supplement system powered by clean science for women who want energy, clarity, and confidence without hormones or fluff.</p>
+    <h1 class="reveal">Reclaim Your Strength. Redefine Menopause.</h1>
+    <p class="reveal">A two-step supplement system powered by clean science for women who want energy, clarity, and confidence without hormones or fluff.</p>
   </section>
 
-  <div class="offer">
+  <div class="offer reveal">
     <strong>Pre-Launch: Early Access Ends Soon</strong><br>
     Normally $49.99 — <strong>Pre-Order for $34.99</strong>
     <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
     <div class="timer">Deal ends in: <span id="countdown">3 days 00h 00m</span></div>
-    <a href="#preorder" class="cta-button">Get Early Access</a>
+    <a href="https://tally.so/r/yourformlink" class="cta-button" target="_blank">Get Early Access</a>
   </div>
 
-  <section class="mission">
+  <section class="mission reveal">
     <p><strong>For too long,</strong> the wellness industry has treated women’s health as a problem to fix, something to soften or patch with hormones.</p>
     <p><strong>We’re done with that.</strong></p>
-    <p>We built a company anchored in real science and clean strength for women who want to feel steady, strong, and clear at every stage of life.</p>
-    <p>Our approach: a two-step supplement system that supports balance and builds strength from the inside out.</p>
-    <p><em>Two clean formulas. One mission: helping women feel like themselves again.</em></p>
+    <p>Most products take a one-size-fits-all approach to menopause, trying to address everything at once. But every woman’s experience is unique. Hot flashes, fatigue, bone changes, mood shifts, and brain fog all need specific attention. That’s why we built Balance & Strength to work with your body, not against it.</p>
   </section>
 
   <section class="product-section">
-    <h2>The Two-Step Supplement System</h2>
+    <h2 class="reveal">The Two-Step Supplement System</h2>
     <div class="product-showcase">
-      <div class="product">
-        <img src="https://via.placeholder.com/150/ffb6c1/000000?text=Cycle+Support" alt="Cycle Support Bottle">
+      <div class="product reveal">
+        <img src="https://m.media-amazon.com/images/I/81E9iRTg9WL._AC_UF1000%2C1000_QL80_.jpg" alt="Cycle Support Bottle">
         <h3>Cycle Support</h3>
-        <ul>
-          <li><span class="checkmark">✓</span> Supports balance, mood, and rhythm naturally</li>
-          <li><span class="checkmark">✓</span> Encourages hormonal steadiness without manipulation or crashes</li>
-          <li><span class="checkmark">✓</span> Helps reduce fatigue and mood dips</li>
-        </ul>
+        <div class="check"><span class="checkmark">✓</span>Calms hot flashes and promotes steady mood</div>
+        <div class="check"><span class="checkmark">✓</span>Encourages natural hormonal balance</div>
+        <div class="check"><span class="checkmark">✓</span>Supports restful sleep and daily calm</div>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/150/98fb98/000000?text=Clean+Creatine" alt="Clean Creatine Jar">
+      <div class="product reveal">
+        <img src="https://shop.oldschoollabs.com/cdn/shop/files/Creatineforwomenbottle.png?v=1711366140&width=1024" alt="Clean Creatine Jar">
         <h3>Clean Creatine</h3>
-        <ul>
-          <li><span class="checkmark">✓</span> Fuels your brain, muscle, and bone density</li>
-          <li><span class="checkmark">✓</span> Maintains strength and energy without hormones or stimulants</li>
-          <li><span class="checkmark">✓</span> Promotes cognitive clarity and resilience</li>
-        </ul>
+        <div class="check"><span class="checkmark">✓</span>Boosts energy, strength, and bone health</div>
+        <div class="check"><span class="checkmark">✓</span>Improves tone and endurance naturally</div>
+        <div class="check"><span class="checkmark">✓</span>No bloating or artificial stimulants</div>
       </div>
+    </div>
+  </section>
+
+  <section class="science reveal">
+    <h2>Why It Works</h2>
+    <div class="science-content">
+      <h3>Step 1: Balance First</h3>
+      <p>During menopause, shifts in estrogen and cortisol can affect temperature regulation, sleep quality, and mood. Cycle Support combines adaptogens and key micronutrients that help the body handle stress and restore equilibrium. It promotes calm and stability by gently supporting your natural rhythm.</p>
+
+      <h3>Step 2: Strength That Lasts</h3>
+      <p>Creatine is one of the most studied compounds for energy and muscle health. It helps cells regenerate ATP, which fuels every movement and thought. Clean Creatine supports lean muscle, bone density, and focus. It gives lasting strength and clarity that many women miss when energy drops during midlife.</p>
     </div>
   </section>
 
   <section class="testimonials">
-    <h2>Women Who Tried It, Loved It</h2>
+    <h2 class="reveal">Women Who Tried It, Loved It</h2>
     <div class="testimonial-container">
-      <div class="testimonial">“I never knew which supplement to pick since they all just seemed like it was purely focused on my hormones. This is the first one that actually felt like it had me and other women in menopause in mind. I felt steady energy, no bloating, and just like myself again.”<div class="name">— Lisa, 52</div></div>
-      <div class="testimonial">“I struggled with the brain fog and body tiredness for so long until I got this product. It was an almost immediate change, and I couldn't be happier that I'm with this company now. I'd absolutely recommend it for any women in perimenopause or menopause like me.”<div class="name">— Karen, 48</div></div>
+      <div class="testimonial reveal">
+        “I never knew which supplement to pick since most focused on hormones alone. This one finally worked. I feel clear, steady, and strong again.”
+        <div class="name">— Lisa, 52</div>
+      </div>
+      <div class="testimonial reveal">
+        “I struggled with fatigue and brain fog for years. Within weeks, I noticed my energy returning and my body feeling balanced again.”
+        <div class="name">— Karen, 48</div>
+      </div>
     </div>
   </section>
 
-  <section style="text-align:center;margin:3rem auto;">
+  <section class="waitlist reveal">
     <h2>Join the Waitlist</h2>
-    <p>Be the First to Try It</p>
-    <p>Get early access to pre-orders and exclusive launch updates.</p>
-    <form action="https://tally.so/r/n0example" method="POST" target="_blank">
-      <input type="email" name="email" placeholder="Enter your email" required style="padding:0.8rem 1rem; width:250px; border-radius:6px; border:1px solid #ccc;">
-      <button type="submit" class="cta-button">Join Waitlist</button>
+    <p>Get early access and exclusive launch pricing.</p>
+    <form action="https://tally.so/r/yourformlink" method="get" target="_blank">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Join Waitlist</button>
     </form>
+    <p style="color:#666;margin-top:0.5rem;">No spam. Unsubscribe anytime.</p>
   </section>
 
-  <footer>
-    Two clean formulas. One mission: helping women feel like themselves again.
-  </footer>
+  <footer>Two clean formulas. One mission: helping women feel like themselves again.</footer>
 
   <script>
-    const countdownElement = document.getElementById('countdown');
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    const bar = document.getElementById('progress');
+    let progress = 0, goal = 50;
+    const animate = () => {
+      progress++;
+      if (progress <= goal) {
+        bar.style.width = progress + '%';
+        requestAnimationFrame(animate);
+      }
+    };
+    requestAnimationFrame(animate);
+
+    const countdown = document.getElementById('countdown');
     let timeLeft = 3 * 24 * 3600;
     function updateTimer() {
       const days = Math.floor(timeLeft / (24 * 3600));
       const hours = String(Math.floor((timeLeft % (24 * 3600)) / 3600)).padStart(2, '0');
-      const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, '0');
-      countdownElement.textContent = `${days} days ${hours}h ${minutes}m`;
+      const mins = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, '0');
+      countdown.textContent = `${days} days ${hours}h ${mins}m`;
       timeLeft--;
       if (timeLeft >= 0) setTimeout(updateTimer, 1000);
     }
     updateTimer();
-
-    const progress = document.getElementById('progress');
-    let fill = 40;
-    function animateProgress() {
-      fill = Math.min(fill + 1, 100);
-      progress.style.width = fill + '%';
-      if (fill < 75) setTimeout(animateProgress, 200);
-    }
-    animateProgress();
   </script>
 </body>
 </html>
+
