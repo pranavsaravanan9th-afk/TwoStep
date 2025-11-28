@@ -1,1277 +1,433 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Future MD Academy — MCAT Tutoring</title>
-    <meta
-      name="description"
-      content="Top 5% tutors. Top 1% section specialists. Personalized MCAT tutoring with a +10 point improvement guarantee."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="Future MD Academy — MCAT Tutoring" />
-    <meta
-      property="og:description"
-      content="Crush the MCAT with personalized coaching designed around you."
-    />
-    <meta property="og:type" content="website" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance & Strength | Two-Step Supplement System for Women</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      color: #222;
+      line-height: 1.6;
+      background: linear-gradient(180deg, #ffffff 0%, #f8e9f6 40%, #f4e3ff 100%);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 0;
+      color: #1b1b1b;
+    }
+    .cta-button {
+      background-color: #a34bc7;
+      color: #fff;
+      padding: 0.9rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.25s;
+    }
+    .cta-button:hover { background-color: #8c3cae; }
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #4b1b65;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 640px;
+      margin: 0 auto 2rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
 
-    <style>
-      :root {
-        --navy: #0b2a3c;
-        --gold: #e0b84d;
-        --light: #f5f5f7;
-      }
-    </style>
-  </head>
-  <body class="min-h-screen scroll-smooth bg-[var(--light)]">
-    <!-- Top bar -->
-    <div class="sticky top-0 z-40 w-full border-b border-white/10 bg-[var(--navy)]/90 backdrop-blur">
-      <div
-        class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4"
-      >
-        <a href="#home" class="flex items-center gap-3">
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[var(--navy)]">
-            <!-- simple cap icon replacement -->
-            <span class="text-xl font-bold">🎓</span>
-          </div>
-          <div class="text-white">
-            <div class="text-sm uppercase tracking-wider text-white/70">
-              Future MD Academy
-            </div>
-            <div class="-mt-1 text-lg font-extrabold">MCAT Tutoring</div>
-          </div>
-        </a>
+    .offer {
+      background: #fff;
+      border: 1px solid #e9c4f1;
+      max-width: 500px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .progress-bar {
+      width: %;
+      margin: 0.7rem auto 1rem;
+      height: 8px;
+      background: #f5dcf9;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      background: #a34bc7;
+      transition: width 1.2s ease;
+    }
+    .timer {
+      font-weight: 600;
+      color: #a34bc7;
+      margin-bottom: 0.5rem;
+    }
 
-        <!-- Desktop nav -->
-        <nav class="hidden items-center gap-6 text-sm text-white/90 md:flex">
-          <a href="#services" class="hover:text-white">Services</a>
-          <a href="#how" class="hover:text-white">How it Works</a>
-          <a href="#guarantee" class="hover:text-white">Guarantee</a>
-          <a href="#pricing" class="hover:text-white">Pricing</a>
-          <a href="#faq" class="hover:text-white">FAQ</a>
-          <a
-            href="#contact"
-            class="rounded-xl bg-[var(--gold)] px-4 py-2 font-semibold text-[var(--navy)] hover:opacity-90"
-          >
-            Free Consultation
-          </a>
-        </nav>
+    .mission {
+      text-align: center;
+      max-width: 740px;
+      margin: 3rem auto;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .purple { color: #a34bc7; font-weight: 600; }
 
-        <!-- Mobile menu button -->
-        <button
-          id="menuToggle"
-          class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/20 text-white"
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
-      </div>
+    /* Product section */
+    .product-section {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .product-section h2 {
+      color: #4b1b65;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .bubble {
+      background: #fff;
+      border: 2px solid #e1b4f9;
+      border-radius: 18px;
+      padding: 1.5rem 1.8rem;
+      width: 330px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+    .bubble h3 {
+      color: #4b1b65;
+      margin-top: 0;
+      text-align: left;
+    }
 
-      <!-- Mobile menu -->
-      <div
-        id="mobileMenu"
-        class="hidden md:hidden border-t border-white/10 bg-[var(--navy)]/95"
-      >
-        <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
-          <div class="flex flex-col gap-2 text-white/90">
-            <a href="#services" class="py-2">Services</a>
-            <a href="#how" class="py-2">How it Works</a>
-            <a href="#guarantee" class="py-2">Guarantee</a>
-            <a href="#pricing" class="py-2">Pricing</a>
-            <a href="#faq" class="py-2">FAQ</a>
-            <a
-              href="#contact"
-              class="mt-2 inline-flex items-center justify-center rounded-2xl bg-[var(--gold)] px-4 py-2 font-semibold text-[var(--navy)]"
-            >
-              Free Consultation
-            </a>
-          </div>
-        </div>
-      </div>
+    /* Bullet rows: perfect vertical centering */
+    .checkline {
+      display: flex;
+      align-items: center;          /* centers icon to text block */
+      gap: 10px;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+    .checkline:last-child { margin-bottom: 0; }
+
+    .checkmark {
+      background: #a34bc7;
+      color: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: inline-flex;         /* centers the ✓ inside the circle */
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex: 0 0 20px;               /* fixed width to prevent shifts */
+    }
+
+    /* Science section */
+    .science {
+      background: #fff;
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+      border-top: 1px solid #f2d8f7;
+      border-bottom: 1px solid #f2d8f7;
+    }
+    .science h2 {
+      color: #4b1b65;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    .science-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      color: #333;
+      font-size: 1.05rem;
+    }
+    .science-content h3 {
+      color: #a34bc7;
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+    }
+    .science-content a {
+      color: #a34bc7;
+      text-decoration: none;
+    }
+
+    .testimonials {
+      background: #f8e9f6;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .testimonial-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background: #fff;
+      border: 1px solid #e1b4f9;
+      border-radius: 14px;
+      padding: 1.5rem;
+      max-width: 420px;
+      font-style: italic;
+      color: #333;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    }
+    .testimonial .name {
+      margin-top: 0.5rem;
+      font-weight: 700;
+      color: #a34bc7;
+      font-style: normal;
+    }
+
+    .waitlist {
+      background: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .waitlist input {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 260px;
+      font-size: 1rem;
+    }
+    .waitlist button {
+      background-color: #a34bc7;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 0.5rem;
+      cursor: pointer;
+      transition: background 0.25s;
+    }
+    .waitlist button:hover { background-color: #8c3cae; }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .reveal { opacity: 0; transform: translateY(10px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.show { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Balance & Strength</h2>
+    <a href="https://tally.so/r/yourformlink" class="cta-button" target="_blank">Pre-Order Now</a>
+  </header>
+
+<section class="hero">
+  <h1 class="reveal">Reclaim Your Energy. Redefine Menopause</h1>
+
+  <p class="reveal">
+    <span class="purple">Balance & Strength</span> is the first science-based, two-step supplement system designed by medical students and physicians to simplify menopause care.
+  </p>
+</section>
+
+
+  
+
+  <div class="offer reveal">
+    <strong>Pre-Launch: Early Access Ends Soon</strong><br>
+    Normally $49.99 — <strong>Pre-Order for $34.99</strong>
+      <p style="font-size:12px;color:#666;margin-top:4px;">*See disclaimer below.</p>
+    <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+    <div class="timer">Deal ends in: <span id="countdown">3 days 00h 00m</span></div>
+    <a href="https://tally.so/r/yourformlink" class="cta-button" target="_blank">Get Early Access</a>
+  </div>
+
+  <section class="mission reveal">
+  <p>Most menopause supplements promise to fix everything and end up cluttering your counter.</p>
+  <p><strong>Two clean formulas, one simple system.</strong></p>
+  <p><span class="purple">Cycle Support</span> helps restore comfort and rhythm.</p>
+  <p><span class="purple">Clean Creatine</span> supports strength, energy, and mental clarity.</p>
+</section>
+
+  <section class="product-section">
+    <h2 class="reveal">The Two-Step Supplement System</h2>
+    <p class="reveal" style="max-width:680px;margin:0 auto 2rem;color:#444;font-size:1.1rem;">
+      Two clean formulas, one mission. Designed to bring balance and strength from the inside out.
+    </p>
+
+    <div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+      <img src="Supp.png" alt="Clean Creatine and Cycle Support bottles"
+        style="width:60%;max-width:700px;border-radius:16px;box-shadow:0 6px 14px rgba(0,0,0,0.08);">
     </div>
 
-    <!-- Hero -->
-    <section id="home" class="scroll-mt-24 py-20 relative overflow-hidden bg-[var(--navy)]">
-      <div
-        class="pointer-events-none absolute inset-0 bg-[radial-gradient(80rem_40rem_at_50%_-10%,rgba(255,255,255,0.18),transparent)]"
-      ></div>
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="grid items-center gap-12 py-6 md:grid-cols-2">
-          <div>
-            <span
-              class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white backdrop-blur"
-            >
-              ✨
-              Top 5% Tutors • Top 1% Section Specialists • +10 Points Guaranteed
-            </span>
-            <h1
-              class="mt-6 text-4xl font-extrabold leading-tight text-white sm:text-5xl"
-            >
-              Crush the MCAT with personalized coaching designed around
-              <span class="text-[var(--gold)]"> you</span>
-            </h1>
-            <p class="mt-4 text-lg leading-relaxed text-white/80">
-              One on one tutoring with specialists for C/P, CARS, B/B, and P/S,
-              custom study plans, and test taking systems built by 100th percentile
-              scorers.
-            </p>
-            <div class="mt-8 flex flex-wrap items-center gap-3">
-              <a
-                href="#contact"
-                class="inline-flex items-center gap-2 rounded-2xl bg-[var(--gold)] px-5 py-3 font-semibold text-[var(--navy)] shadow-sm hover:opacity-90"
-              >
-                Get Your FREE Consultation
-                <span>→</span>
-              </a>
-              <a
-                href="#services"
-                class="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/10"
-              >
-                Explore Our Programs
-              </a>
-            </div>
-            <div class="mt-8 grid max-w-xl grid-cols-3 gap-4">
-              <div
-                class="rounded-2xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-black/5"
-              >
-                <div class="text-3xl font-extrabold text-[var(--gold)]">518+</div>
-                <div class="mt-1 text-sm text-slate-600">
-                  Tutor composite scores
-                </div>
-              </div>
-              <div
-                class="rounded-2xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-black/5"
-              >
-                <div class="text-3xl font-extrabold text-[var(--gold)]">
-                  131/132
-                </div>
-                <div class="mt-1 text-sm text-slate-600">Section subscores</div>
-              </div>
-              <div
-                class="rounded-2xl bg-white/80 p-6 text-center shadow-sm ring-1 ring-black/5"
-              >
-                <div class="text-3xl font-extrabold text-[var(--gold)]">+10</div>
-                <div class="mt-1 text-sm text-slate-600">Point Guarantee</div>
-              </div>
-            </div>
-          </div>
+    <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;max-width:820px;margin:0 auto;">
+  <div class="bubble">
+    <h3>Clean Creatine</h3>
+    <div class="checkline"><span class="checkmark">✓</span><span>Boosts energy, strength, and bone health</span></div>
+    <div class="checkline"><span class="checkmark">✓</span><span>Improves tone and endurance naturally</span></div>
+    <div class="checkline"><span class="checkmark">✓</span><span>No bloating or artificial stimulants</span></div>
+  </div>
 
-          <!-- Right hero card -->
-          <div>
-            <div
-              class="relative rounded-3xl bg-white/10 p-2 shadow-2xl ring-1 ring-white/20"
-            >
-              <div class="rounded-2xl bg-white p-6 text-[var(--navy)]">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div
-                      class="h-12 w-12 rounded-xl bg-[var(--navy)]/10 text-[var(--gold)] flex items-center justify-center"
-                    >
-                      <svg viewBox="0 0 40 40" class="h-7 w-7">
-                        <polyline
-                          points="4,28 14,22 22,24 30,16 36,14"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                    <div class="text-lg font-semibold text-slate-900">
-                      Student Score Trend
-                    </div>
-                  </div>
-                  <div class="flex items-center gap-1 text-[var(--gold)]">
-                    <span>★</span><span>★</span><span>★</span><span>★</span
-                    ><span>★</span>
-                  </div>
-                </div>
-                <div
-                  class="mt-6 grid items-stretch gap-6 md:grid-cols-[1fr_auto_1fr]"
-                >
-                  <div
-                    class="rounded-2xl bg-slate-50 p-6 text-center ring-1 ring-slate-200"
-                  >
-                    <div
-                      class="text-5xl font-extrabold text-[var(--gold)]"
-                    >
-                      516.3
-                    </div>
-                    <div
-                      class="mt-3 text-lg font-medium text-slate-900"
-                    >
-                      <span
-                        class="inline-block rounded-sm bg-[var(--gold)]/80 px-1 text-[var(--navy)]"
-                        >Average</span
-                      ><span class="ml-2">Student Score</span>
-                    </div>
-                  </div>
-                  <div class="hidden h-auto w-px bg-slate-200 md:block"></div>
-                  <div
-                    class="rounded-2xl bg-slate-50 p-6 text-center ring-1 ring-slate-200"
-                  >
-                    <div
-                      class="text-5xl font-extrabold text-[var(--gold)]"
-                    >
-                      14.1
-                    </div>
-                    <div
-                      class="mt-3 text-lg font-medium text-slate-900"
-                    >
-                      <span
-                        class="inline-block rounded-sm bg-[var(--gold)]/80 px-1 text-[var(--navy)]"
-                        >Average</span
-                      ><span class="ml-2">Score Increase</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="bubble">
+    <h3>Cycle Support</h3>
+    <div class="checkline"><span class="checkmark">✓</span><span>Supports temperature, comfort, and emotional balance</span></div>
+<div class="checkline"><span class="checkmark">✓</span><span>Supports overall hormonal well-being</span></div>
+<div class="checkline"><span class="checkmark">✓</span><span>Supports restful sleep and daily calm</span></div>
+  </div>
+</div>
+  </section>
 
-    <!-- Trust strip -->
-    <div class="border-y bg-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-wrap items-center justify-center gap-6 py-6 text-slate-500"
-        >
-          <div class="flex items-center gap-2">
-            <span>🛡️</span> Guaranteed Score Growth
-          </div>
-          <div class="flex items-center gap-2">
-            <span>🏅</span> Top 5% Tutors
-          </div>
-          <div class="flex items-center gap-2">
-            <span>🚀</span> Fast Score Momentum
-          </div>
-          <div class="flex items-center gap-2">
-            <span>🤝</span> Compatibility Match
-          </div>
-        </div>
-      </div>
+  <section class="science reveal">
+  <h2>The Science Behind <span class="purple">Balance &amp; Strength</span></h2>
+  <div class="science-content">
+
+    <h3>Step 1: Balance First</h3>
+    <p>
+      Menopause affects comfort, sleep, and mood.
+      <strong>Cycle Support</strong> combines adaptogens and micronutrients studied for their ability
+      to support these transitions and restore equilibrium
+      (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6875258/" target="_blank">click to see the research</a>).
+    </p>
+
+    <h3>Step 2: Strength That Lasts</h3>
+    <p>
+      As muscle and bone density decline, energy and focus fade.
+      <strong>Clean Creatine</strong> uses pure creatine monohydrate, one of the most researched nutrients in physiology,
+      to help maintain strength, endurance, and mental clarity
+      (<a href="https://pubmed.ncbi.nlm.nih.gov/33800439/" target="_blank">click to see the research</a>).
+    </p>
+  </div>
+</section>
+
+
+
+
+  <section class="testimonials">
+  <h2 class="reveal">What Women Are Saying</h2>
+  <div class="testimonial-container">
+
+    <div class="testimonial reveal">
+      “I was taking magnesium for sleep, collagen for skin, and vitamins for energy, yet I still felt off. 
+      The two-step plan from <span class="purple">Balance & Strength</span> finally made sense to me. 
+      One for balance and one for strength. I actually remember to take them now, and I feel steady again.”
+      <div class="name">Maria L., 49</div>
     </div>
 
-    <!-- Services -->
-    <section id="services" class="scroll-mt-24 py-20">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">
-            Not all MCAT prep is created equal. Here is why serious students
-            choose us.
-          </h2>
-          <p class="mt-3 text-slate-600">
-            Expert led MCAT prep with proven results and personalized coaching
-            designed around your unique needs
-          </p>
-        </div>
-        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              🧠
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Top 1% Section Specialists
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Tutors with 518 or higher overall and 131 or 132 in their
-              specialized section. Get expert guidance in C/P, CARS, B/B, and
-              P/S from those who have mastered each domain.
-            </p>
-          </div>
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              📈
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Compatibility Based Matching
-            </h3>
-            <p class="mt-2 text-slate-600">
-              We match you with a tutor based on compatibility and comprehensive
-              strength and weakness analysis to support the best learning
-              experience.
-            </p>
-          </div>
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              ⏰
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Study Schedules by 100th Percentile Scorers
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Custom study plans and strategies created by 100th percentile
-              scorers, designed around your timeline and goals.
-            </p>
-          </div>
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              🗓️
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Flexible Scheduling
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Evenings, weekends, and accelerated plans available. Regular
-              check ins between sessions to maintain consistency.
-            </p>
-          </div>
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              👥
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              10% Hours Refunded After 20 Hours
-            </h3>
-            <p class="mt-2 text-slate-600">
-              If you do not see a 10 point increase after 20 hours of tutoring,
-              we refund 10% of your hours. We stand behind our results.
-            </p>
-          </div>
-          <div
-            class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5 transition hover:shadow-md"
-          >
-            <div
-              class="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--gold)]/15 text-[var(--navy)]"
-            >
-              📚
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Personalized Content Review
-            </h3>
-            <p class="mt-2 text-slate-600">
-              Focused content review tailored to your specific knowledge gaps
-              and learning style, not generic one size fits all approaches.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="testimonial reveal">
+      “Brain fog and fatigue had been creeping up for years. 
+      I didn’t want hormones, but I also didn’t want another miracle powder. 
+      <span class="purple">Balance & Strength</span> felt grounded in real science, and it’s the first time I’ve noticed consistent energy without the crash.”
+      <div class="name">Dana R., 52</div>
+    </div>
 
-    <!-- How it works -->
-    <section id="how" class="scroll-mt-24 py-20 bg-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">How it works</h2>
-          <p class="mt-3 text-slate-600">Simple, transparent, effective.</p>
-        </div>
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <div class="relative rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <div
-              class="absolute -top-4 left-6 rounded-full bg-[var(--gold)] px-3 py-1 text-xs font-bold text-[var(--navy)]"
-            >
-              STEP 1
-            </div>
-            <h4 class="mt-2 text-base font-semibold text-slate-900">
-              Free Consultation
-            </h4>
-            <p class="mt-2 text-slate-600">
-              Share your target schools, test date, and constraints. We identify
-              your quickest win conditions.
-            </p>
-          </div>
-          <div class="relative rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <div
-              class="absolute -top-4 left-6 rounded-full bg-[var(--gold)] px-3 py-1 text-xs font-bold text-[var(--navy)]"
-            >
-              STEP 2
-            </div>
-            <h4 class="mt-2 text-base font-semibold text-slate-900">
-              Match with a Specialist
-            </h4>
-            <p class="mt-2 text-slate-600">
-              We pair you with a tutor whose strengths and teaching style
-              complement your needs.
-            </p>
-          </div>
-          <div class="relative rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <div
-              class="absolute -top-4 left-6 rounded-full bg-[var(--gold)] px-3 py-1 text-xs font-bold text-[var(--navy)]"
-            >
-              STEP 3
-            </div>
-            <h4 class="mt-2 text-base font-semibold text-slate-900">
-              Custom Plan and Coaching
-            </h4>
-            <p class="mt-2 text-slate-600">
-              Follow a week by week schedule. Meet regularly to refine timing,
-              reasoning, and endurance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="testimonial reveal">
+      “I used to have a drawer full of half-finished bottles. 
+      Now it’s just these two, and that simplicity alone changed everything. 
+      They fit easily into my routine, and over time I started feeling more balanced and clear without overthinking it.”
+      <div class="name">Janelle K., 55</div>
+    </div>
 
-    <!-- Guarantee -->
-    <section id="guarantee" class="scroll-mt-24 py-20 bg-[var(--navy)] text-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid items-center gap-10 md:grid-cols-2">
-          <div>
-            <h2 class="text-3xl font-extrabold">+10 Points Guaranteed</h2>
-            <p class="mt-4 text-white/80">
-              Complete 20 hours of tutoring and follow your custom plan. If you
-              do not gain at least 10 points from your verified baseline, we
-              refund 10% of your hours.
-            </p>
-            <ul class="mt-6 space-y-2 text-white/90">
-              <li class="flex items-start gap-2">
-                <span class="mt-1">✔</span>
-                <span>Eligibility reviewed during your consult</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="mt-1">✔</span>
-                <span>Applies to official AAMC full length scaled scores</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="mt-1">✔</span>
-                <span>Transparent terms, no surprise fine print</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <div class="rounded-3xl bg-white/10 p-2 ring-1 ring-white/20">
-              <div class="rounded-2xl bg-white p-8 text-[var(--navy)]">
-                <div class="mb-4 text-3xl text-[var(--gold)] opacity-70">“</div>
-                <p class="text-lg leading-8">
-                  Working with students at Future MD Academy, I see how much of a
-                  difference a structured, personalized plan makes. When students
-                  know they are not studying alone and have someone guiding the
-                  process, their confidence and scores move fast.
-                </p>
-                <div class="mt-6 font-semibold">Teri Johnson</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
+</section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="scroll-mt-24 py-20 bg-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">Build your plan</h2>
-          <p class="mt-3 text-slate-600">
-            Slide to choose hours. Pricing adjusts automatically. Pay in full or
-            split into installments.
-          </p>
-        </div>
-        <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
-          <div class="lg:col-span-2 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <div class="mt-2 rounded-xl border border-neutral-200 p-4">
-              <div class="mb-4 flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                  <span class="text-neutral-400">$</span>
-                  <p class="text-sm font-medium">Select Your Tutoring Hours</p>
-                </div>
-                <div class="flex items-center gap-3">
-                  <button
-                    id="decreaseHours"
-                    class="rounded-full border border-neutral-200 p-1 hover:bg-neutral-50"
-                    aria-label="decrease hours"
-                  >
-                    -
-                  </button>
-                  <div
-                    id="hoursDisplay"
-                    class="min-w-10 text-center text-lg font-semibold"
-                  >
-                    15
-                  </div>
-                  <button
-                    id="increaseHours"
-                    class="rounded-full border border-neutral-200 p-1 hover:bg-neutral-50"
-                    aria-label="increase hours"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-              <input
-                id="hoursRange"
-                type="range"
-                min="0"
-                max="120"
-                step="1"
-                value="15"
-                class="w-full accent-[var(--gold)]"
-              />
-              <div class="mt-4 grid grid-cols-3 items-end gap-4">
-                <div>
-                  <div class="text-xs text-neutral-500">Hours</div>
-                  <div
-                    id="hoursValue"
-                    class="text-lg font-semibold"
-                  >
-                    15
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-neutral-500">Rate/hr</div>
-                  <div
-                    id="rateValue"
-                    class="text-lg font-semibold"
-                  >
-                    $195.00
-                  </div>
-                </div>
-                <div>
-                  <div class="text-xs text-neutral-500">Total</div>
-                  <div
-                    id="totalValue"
-                    class="text-lg font-semibold"
-                  >
-                    $2,925.00
-                  </div>
-                </div>
-              </div>
-              <div class="mt-3 text-xs text-neutral-600">
-                <div
-                  class="mt-2 inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 ring-1 ring-amber-200"
-                >
-                  ⚠
-                  Limited time: secure these rates while seats last.
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <h3 class="text-lg font-semibold">Your Program</h3>
-            <div class="mt-4 space-y-3">
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-neutral-700" id="lineLabel">
-                  Tutoring – 15 hrs @ $195.00/hr
-                </span>
-                <span id="lineSubtotal" class="font-semibold">
-                  $2,925.00
-                </span>
-              </div>
-              <div
-                id="discountRow"
-                class="flex items-center justify-between text-sm hidden"
-              >
-                <span class="text-neutral-700">Bundle Discount</span>
-                <span
-                  id="discountValue"
-                  class="font-semibold text-emerald-600"
-                >
-                  -$0.00
-                </span>
-              </div>
-              <div class="my-2 border-t"></div>
-              <div class="flex items-center justify-between text-sm">
-                <span class="text-neutral-700">Total</span>
-                <span id="totalFinal" class="font-semibold">$2,925.00</span>
-              </div>
-            </div>
 
-            <div class="mt-6">
-              <h4 class="mb-2 text-sm font-semibold text-neutral-700">
-                Payment Options
-              </h4>
-              <div class="space-y-2" id="paymentOptions">
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-fuchsia-300 bg-fuchsia-50 ring-1 ring-fuchsia-200"
-                  data-installments="0"
-                >
-                  <div>
-                    <div class="text-sm font-medium">One time payment</div>
-                    <div class="text-xs text-neutral-500">
-                      Pay in full today
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $2,925.00
-                  </div>
-                </button>
+  <section class="waitlist reveal">
+  <h2>Join the Waitlist</h2>
+  <p>Get early access and exclusive launch pricing.</p>
 
-                <!-- 2 to 6 installments -->
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-neutral-200 hover:bg-neutral-50"
-                  data-installments="2"
-                >
-                  <div>
-                    <div class="text-sm font-medium">2 installments</div>
-                    <div class="text-xs text-neutral-500">
-                      2 monthly payments
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $1,462.50/mo
-                  </div>
-                </button>
+  <a href="https://form.typeform.com/to/VWYDNYed" target="_blank" class="cta-button" 
+     style="display:inline-block;padding:0.9rem 2rem;background:linear-gradient(90deg,#a34bc7,#e3a5d9);
+     color:white;font-weight:600;border:none;border-radius:50px;text-decoration:none;
+     box-shadow:0 4px 10px rgba(0,0,0,0.1);transition:0.3s;">
+     Join Waitlist
+  </a>
 
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-neutral-200 hover:bg-neutral-50"
-                  data-installments="3"
-                >
-                  <div>
-                    <div class="text-sm font-medium">3 installments</div>
-                    <div class="text-xs text-neutral-500">
-                      3 monthly payments
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $975.00/mo
-                  </div>
-                </button>
+  <p style="color:#666;margin-top:0.5rem;">No spam. Unsubscribe anytime.</p>
+</section>
 
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-neutral-200 hover:bg-neutral-50"
-                  data-installments="4"
-                >
-                  <div>
-                    <div class="text-sm font-medium">4 installments</div>
-                    <div class="text-xs text-neutral-500">
-                      4 monthly payments
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $731.25/mo
-                  </div>
-                </button>
+  <footer>
+  Two clean formulas. One mission: helping women feel like themselves again.<br><br>
 
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-neutral-200 hover:bg-neutral-50"
-                  data-installments="5"
-                >
-                  <div>
-                    <div class="text-sm font-medium">5 installments</div>
-                    <div class="text-xs text-neutral-500">
-                      5 monthly payments
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $585.00/mo
-                  </div>
-                </button>
+  <p style="font-size:12px;font-style:italic;color:#555;margin:0.5rem 0;">
+    *These statements have not been evaluated by the Food and Drug Administration.
+    This product is not intended to diagnose, treat, cure, or prevent any disease.
+  </p>
 
-                <button
-                  class="payment-option flex w-full items-center justify-between rounded-xl border p-3 text-left transition border-neutral-200 hover:bg-neutral-50"
-                  data-installments="6"
-                >
-                  <div>
-                    <div class="text-sm font-medium">6 installments</div>
-                    <div class="text-xs text-neutral-500">
-                      6 monthly payments
-                    </div>
-                  </div>
-                  <div
-                    class="text-sm font-semibold"
-                    data-role="amount"
-                  >
-                    $487.50/mo
-                  </div>
-                </button>
-              </div>
-            </div>
+  <p>
+    <a href="#" style="color:#a34bc7;text-decoration:none;">Privacy Policy</a> |
+    <a href="#" style="color:#a34bc7;text-decoration:none;">Terms of Service</a> |
+    <a href="#" style="color:#a34bc7;text-decoration:none;">Contact</a>
+  </p>
 
-            <a
-              href="#contact"
-              class="mt-6 inline-flex w-full items-center justify-center rounded-2xl bg-[var(--navy)] px-4 py-3 font-semibold text-white shadow-sm hover:opacity-90"
-            >
-              Start now and lock in your hours
-            </a>
-            <p class="mt-3 text-center text-xs text-neutral-500">
-              No interest. No hidden fees. You can edit your plan anytime.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <p style="font-size:12px;color:#777;">
+    We collect anonymous responses to improve our product. No personal data is sold or shared.
+  </p>
+</footer>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="scroll-mt-24 py-20 bg-[var(--light)]">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">Student wins</h2>
-          <p class="mt-3 text-slate-600">Real outcomes from tailored coaching.</p>
-        </div>
 
-        <!-- Simple grid version of testimonials -->
-        <div class="mt-10 grid gap-6 md:grid-cols-3">
-          <!-- 1 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “Went from a 503 diagnostic to a 515 in 8 weeks. Timing strategies
-              changed everything for CARS.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Riya P.</div>
-                <div class="text-sm text-slate-600">Accepted to UA COM</div>
-              </div>
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “My B/B plateau broke after two sessions with a 132 scorer who
-              showed me how to read passages like a scientist.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Jason M.</div>
-                <div class="text-sm text-slate-600">520 official</div>
-              </div>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “I finally had a plan I could follow with school. The weekly
-              check ins kept me consistent.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Amrita K.</div>
-                <div class="text-sm text-slate-600">+12 point increase</div>
-              </div>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “+14 points in 6 weeks. Custom passages and error logs made the
-              difference.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Lauren S.</div>
-                <div class="text-sm text-slate-600">NYU applicant</div>
-              </div>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “C/P clicked once we switched to a data first approach. I hit 131
-              on my next FL.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Marcus D.</div>
-                <div class="text-sm text-slate-600">131 C/P</div>
-              </div>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “I always felt stuck at 508. Pacing and reasoning drills took me to
-              a 519 official.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Sofia H.</div>
-                <div class="text-sm text-slate-600">519 official</div>
-              </div>
-            </div>
-          </div>
-          <!-- 7 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “Tutor matched me by personality and schedule. Studying finally
-              felt sustainable and my stress dropped.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Neha L.</div>
-                <div class="text-sm text-slate-600">+11 point jump</div>
-              </div>
-            </div>
-          </div>
-          <!-- 8 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “The passage mapping method for B/B was a game changer. I stopped
-              rereading and started answering with confidence.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Caleb W.</div>
-                <div class="text-sm text-slate-600">131 B/B</div>
-              </div>
-            </div>
-          </div>
-          <!-- 9 -->
-          <div class="rounded-2xl bg-white p-4 shadow-sm border border-[var(--gold)]">
-            <p class="text-slate-700">
-              “Their weekly accountability texts kept me honest. I hit my 515
-              goal a month early.”
-            </p>
-            <div class="mt-4 flex items-center gap-3">
-              <div class="h-10 w-10 shrink-0 rounded-full bg-[var(--navy)]/10"></div>
-              <div>
-                <div class="font-semibold text-[var(--navy)]">Janelle T.</div>
-                <div class="text-sm text-slate-600">515 official</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="scroll-mt-24 py-20 bg-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">FAQ</h2>
-          <p class="mt-3 text-slate-600">Quick answers to common questions.</p>
-        </div>
-        <div class="mt-10 grid gap-4 md:grid-cols-2">
-          <details class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <summary class="cursor-pointer list-none">
-              <div class="flex items-start justify-between gap-6">
-                <h4 class="text-base font-semibold text-slate-900">
-                  Who are the tutors?
-                </h4>
-                <span
-                  class="mt-1 rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:hidden"
-                  >+</span
-                >
-                <span
-                  class="mt-1 hidden rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:inline"
-                  >–</span
-                >
-              </div>
-            </summary>
-            <p class="mt-3 text-slate-600">
-              All coaches are top 5% scorers with 518 or higher and demonstrated
-              section expertise with 131 or 132. We match you based on strengths
-              and teaching style.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <summary class="cursor-pointer list-none">
-              <div class="flex items-start justify-between gap-6">
-                <h4 class="text-base font-semibold text-slate-900">
-                  Do you offer online sessions?
-                </h4>
-                <span
-                  class="mt-1 rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:hidden"
-                  >+</span
-                >
-                <span
-                  class="mt-1 hidden rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:inline"
-                  >–</span
-                >
-              </div>
-            </summary>
-            <p class="mt-3 text-slate-600">
-              Yes. We tutor via Zoom or Google Meet with shared whiteboarding and
-              recorded notes when requested.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <summary class="cursor-pointer list-none">
-              <div class="flex items-start justify-between gap-6">
-                <h4 class="text-base font-semibold text-slate-900">
-                  What materials do you use?
-                </h4>
-                <span
-                  class="mt-1 rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:hidden"
-                  >+</span
-                >
-                <span
-                  class="mt-1 hidden rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:inline"
-                  >–</span
-                >
-              </div>
-            </summary>
-            <p class="mt-3 text-slate-600">
-              AAMC resources first, paired with high yield third party practice
-              tailored to your needs.
-            </p>
-          </details>
-
-          <details class="group rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <summary class="cursor-pointer list-none">
-              <div class="flex items-start justify-between gap-6">
-                <h4 class="text-base font-semibold text-slate-900">
-                  How does the guarantee work?
-                </h4>
-                <span
-                  class="mt-1 rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:hidden"
-                  >+</span
-                >
-                <span
-                  class="mt-1 hidden rounded-full border px-2 py-0.5 text-xs text-slate-500 group-open:inline"
-                  >–</span
-                >
-              </div>
-            </summary>
-            <p class="mt-3 text-slate-600">
-              With 20 hours completed and adherence to your plan, we guarantee a
-              10 point increase from your verified baseline or refund 10% of your
-              hours.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="scroll-mt-24 py-20 bg-[var(--light)]">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900">
-            Book your free consultation
-          </h2>
-          <p class="mt-3 text-slate-600">
-            Tell us your target date and goals. We reply within 24 hours with
-            next steps and available times.
-          </p>
-        </div>
-        <div class="mx-auto mt-10 grid max-w-4xl gap-6 md:grid-cols-2">
-          <form
-            method="POST"
-            action="https://formspree.io/f/your-id"
-            class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5"
-          >
-            <div class="grid gap-4">
-              <input
-                required
-                name="name"
-                placeholder="Full name"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--navy)]"
-              />
-              <input
-                required
-                type="email"
-                name="email"
-                placeholder="Email"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--navy)]"
-              />
-              <input
-                name="phone"
-                placeholder="Phone (optional)"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--navy)]"
-              />
-              <input
-                name="test_date"
-                placeholder="Target MCAT date (e.g., June 28, 2026)"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--navy)]"
-              />
-              <textarea
-                required
-                name="message"
-                rows="5"
-                placeholder="Tell us about your goals and biggest hurdles"
-                class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 outline-none placeholder:text-slate-400 focus:border-[var(--navy)]"
-              ></textarea>
-              <button
-                type="submit"
-                class="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--navy)] px-5 py-3 font-semibold text-white hover:opacity-90"
-              >
-                Request Consultation
-                <span>→</span>
-              </button>
-            </div>
-            <p class="mt-3 text-xs text-slate-500">
-              By submitting, you agree to be contacted about scheduling and
-              services. No spam.
-            </p>
-          </form>
-
-          <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5">
-            <div class="space-y-4 text-slate-700">
-              <div class="flex items-start gap-3">
-                <span class="mt-0.5">✉</span>
-                <div>
-                  <div class="text-sm font-semibold text-slate-900">Email</div>
-                  <a
-                    href="mailto:hello@futuremdacademy.org"
-                    class="text-[var(--navy)] hover:underline"
-                    >hello@futuremdacademy.org</a
-                  >
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="mt-0.5">📞</span>
-                <div>
-                  <div class="text-sm font-semibold text-slate-900">Phone</div>
-                  <a
-                    href="tel:123456789"
-                    class="text-[var(--navy)] hover:underline"
-                    >(123) 456 789</a
-                  >
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="mt-0.5">🌐</span>
-                <div>
-                  <div class="text-sm font-semibold text-slate-900">Website</div>
-                  <a
-                    href="https://FutureMDAcademy.org"
-                    class="text-[var(--navy)] hover:underline"
-                    >FutureMDAcademy.org</a
-                  >
-                </div>
-              </div>
-              <div
-                class="rounded-xl bg-[var(--navy)]/5 p-4 text-sm"
-              >
-                Prefer email. Send your availability and target score to
-                <span class="font-semibold">hello@futuremdacademy.org</span> and
-                we handle the rest.
-              </div>
-            </div>
-            <div
-              class="mt-6 rounded-xl border border-dashed border-slate-200 p-4 text-sm text-slate-500"
-            >
-              Optional: embed your flyer or QR here.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t bg-white">
-      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 py-10 md:grid-cols-4">
-        <div>
-          <div class="flex items-center gap-3">
-            <div
-              class="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--navy)] text-white"
-            >
-              🎓
-            </div>
-            <div class="text-slate-900">
-              <div class="text-lg font-extrabold">Future MD Academy</div>
-              <div class="text-xs text-slate-500">MCAT Tutoring</div>
-            </div>
-          </div>
-          <p class="mt-4 text-sm text-slate-600">
-            Top 5% tutors. Top 1% section specialists. Guaranteed score growth.
-          </p>
-        </div>
-        <div>
-          <div class="text-sm font-semibold text-slate-900">Company</div>
-          <ul class="mt-3 space-y-2 text-sm text-slate-600">
-            <li><a href="#services" class="hover:text-slate-900">Services</a></li>
-            <li><a href="#pricing" class="hover:text-slate-900">Pricing</a></li>
-            <li><a href="#faq" class="hover:text-slate-900">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="text-sm font-semibold text-slate-900">Legal</div>
-          <ul class="mt-3 space-y-2 text-sm text-slate-600">
-            <li><a href="#" class="hover:text-slate-900">Terms</a></li>
-            <li><a href="#" class="hover:text-slate-900">Privacy</a></li>
-          </ul>
-        </div>
-        <div>
-          <div class="text-sm font-semibold text-slate-900">Contact</div>
-          <ul class="mt-3 space-y-2 text-sm text-slate-600">
-            <li class="flex items-center gap-2">
-              ✉
-              <span>hello@futuremdacademy.org</span>
-            </li>
-            <li class="flex items-center gap-2">
-              📞
-              <span>123 456 789</span>
-            </li>
-            <li class="flex items-center gap-2">
-              🌐
-              <span>FutureMDAcademy.org</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="border-t py-6 text-center text-xs text-slate-500">
-        © <span id="year"></span> Future MD Academy. All rights reserved.
-      </div>
-    </footer>
-
-    <!-- Vanilla JS logic to replace the React state for pricing and nav -->
-    <script>
-      function formatUSD(n) {
-        return n.toLocaleString(undefined, {
-          style: "currency",
-          currency: "USD",
-        });
-      }
-
-      function getSmoothRate(hours) {
-        if (hours <= 9) return 195;
-        if (hours <= 19) return 195 - ((hours - 10) * (195 - 185)) / (19 - 10);
-        if (hours <= 40) return 180 - ((hours - 20) * (180 - 160)) / (40 - 20);
-        if (hours <= 80) return 160 - ((hours - 40) * (160 - 150)) / (80 - 40);
-        if (hours <= 120) return 150 - ((hours - 80) * (150 - 145)) / (120 - 80);
-        return 145;
-      }
-
-      function getDiscount(hours) {
-        if (hours < 20) return 0;
-        if (hours <= 40) return 600 - 10 * (hours - 20);
-        return 400;
-      }
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const yearSpan = document.getElementById("year");
-        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
-
-        const menuToggle = document.getElementById("menuToggle");
-        const mobileMenu = document.getElementById("mobileMenu");
-        if (menuToggle && mobileMenu) {
-          menuToggle.addEventListener("click", function () {
-            mobileMenu.classList.toggle("hidden");
-          });
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
         }
-
-        const hoursRange = document.getElementById("hoursRange");
-        const decreaseHours = document.getElementById("decreaseHours");
-        const increaseHours = document.getElementById("increaseHours");
-        const hoursDisplay = document.getElementById("hoursDisplay");
-        const hoursValue = document.getElementById("hoursValue");
-        const rateValue = document.getElementById("rateValue");
-        const totalValue = document.getElementById("totalValue");
-        const lineLabel = document.getElementById("lineLabel");
-        const lineSubtotal = document.getElementById("lineSubtotal");
-        const discountRow = document.getElementById("discountRow");
-        const discountValue = document.getElementById("discountValue");
-        const totalFinal = document.getElementById("totalFinal");
-        const paymentOptions = document.querySelectorAll(".payment-option");
-
-        function updatePricingFromHours(hours) {
-          const h = Math.max(0, Math.min(120, hours));
-          const rate = getSmoothRate(h);
-          const subtotal = h * rate;
-          const discount = getDiscount(h);
-          const total = Math.max(0, subtotal - discount);
-
-          if (hoursRange) hoursRange.value = h;
-          if (hoursDisplay) hoursDisplay.textContent = h;
-          if (hoursValue) hoursValue.textContent = h;
-          if (rateValue) rateValue.textContent = formatUSD(rate);
-          if (totalValue) totalValue.textContent = formatUSD(total);
-          if (lineLabel)
-            lineLabel.textContent =
-              "Tutoring – " + h + " hr" + (h === 1 ? "" : "s") + " @ " + formatUSD(rate) + "/hr";
-          if (lineSubtotal) lineSubtotal.textContent = formatUSD(subtotal);
-
-          if (discount > 0) {
-            discountRow.classList.remove("hidden");
-            discountValue.textContent = "-" + formatUSD(discount);
-          } else {
-            discountRow.classList.add("hidden");
-            discountValue.textContent = "-" + formatUSD(0);
-          }
-          if (totalFinal) totalFinal.textContent = formatUSD(total);
-
-          // update payment options
-          paymentOptions.forEach(function (btn) {
-            const spans = btn.querySelectorAll("[data-role='amount']");
-            const installments = parseInt(btn.getAttribute("data-installments"), 10);
-            spans.forEach(function (sp) {
-              if (!installments) {
-                sp.textContent = formatUSD(total);
-              } else {
-                sp.textContent = formatUSD(total / installments) + "/mo";
-              }
-            });
-          });
-        }
-
-        function getCurrentHours() {
-          return parseInt(hoursRange.value, 10) || 0;
-        }
-
-        if (hoursRange) {
-          hoursRange.addEventListener("input", function () {
-            updatePricingFromHours(parseInt(this.value, 10));
-          });
-        }
-
-        if (decreaseHours) {
-          decreaseHours.addEventListener("click", function () {
-            updatePricingFromHours(getCurrentHours() - 1);
-          });
-        }
-        if (increaseHours) {
-          increaseHours.addEventListener("click", function () {
-            updatePricingFromHours(getCurrentHours() + 1);
-          });
-        }
-
-        // payment option selection styling
-        paymentOptions.forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            paymentOptions.forEach(function (b) {
-              b.classList.remove(
-                "border-fuchsia-300",
-                "bg-fuchsia-50",
-                "ring-1",
-                "ring-fuchsia-200"
-              );
-              b.classList.add("border-neutral-200");
-            });
-            btn.classList.remove("border-neutral-200");
-            btn.classList.add(
-              "border-fuchsia-300",
-              "bg-fuchsia-50",
-              "ring-1",
-              "ring-fuchsia-200"
-            );
-          });
-        });
-
-        // initial
-        updatePricingFromHours(15);
       });
-    </script>
-  </body>
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+
+    const bar = document.getElementById('progress');
+    let progress = 0, goal = 50;
+    const animate = () => {
+      progress++;
+      if (progress <= goal) {
+        bar.style.width = progress + '%';
+        requestAnimationFrame(animate);
+      }
+    };
+    requestAnimationFrame(animate);
+
+    const countdown = document.getElementById('countdown');
+    let timeLeft = 3 * 24 * 3600;
+    function updateTimer() {
+      const days = Math.floor(timeLeft / (24 * 3600));
+      const hours = String(Math.floor((timeLeft % (24 * 3600)) / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, '0');
+      countdown.textContent = `${days} days ${hours}h ${mins}m`;
+      timeLeft--;
+      if (timeLeft >= 0) setTimeout(updateTimer, 1000);
+    }
+    updateTimer();
+  </script>
+<div style="background:#fafafa;text-align:center;padding:0.8rem;font-size:0.8rem;color:#555;border-top:1px solid #eee;">
+  By using this site, you agree to our <a href="#" style="color:#a34bc7;text-decoration:none;">Privacy Policy</a>.
+</div>
+
+</body>
 </html>
